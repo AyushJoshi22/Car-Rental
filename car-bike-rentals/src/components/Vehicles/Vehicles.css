@@ -1,0 +1,121 @@
+/* src/components/Vehicles/Vehicles.css */
+
+/* VehicleList component styles */
+.vehicle-list {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.vehicle-list h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.vehicles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.vehicle {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.vehicle h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.vehicle-image {
+  width: 100%;
+  height: 200px; /* Fixed height for all images */
+  object-fit: cover; /* Maintain aspect ratio and cover the area */
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.vehicle p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 15px;
+  flex-grow: 1;
+}
+
+.vehicle-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.details-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+.details-button:hover {
+  background-color: #0056b3;
+}
+
+/* VehicleDetail component styles */
+.vehicle-detail {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vehicle-detail h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.vehicle-detail .vehicle-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.vehicle-detail p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+.vehicle-detail button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.vehicle-detail button:hover {
+  background-color: #0056b3;
+}

@@ -1,0 +1,28 @@
+/* src/components/User/User.css */
+.booking-history, .profile {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+  }
+  .bookings {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .booking {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+  }
+  .booking h3 {
+    margin-top: 0;
+  }
+  .profile h2 {
+    margin-bottom: 20px;
+  }
+  .profile p {
+    margin-bottom: 10px;
+  }
+  
